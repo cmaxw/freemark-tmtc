@@ -34,12 +34,10 @@ gem 'jquery-rails'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'capybara'
-  gem 'cucumber'
+  gem 'launchy'
   gem 'cucumber-rails'
-  gem 'rspec'
   gem 'rspec-rails'
   gem 'shoulda'
-  gem 'factory_girl'
   gem 'factory_girl_rails'
   gem 'autotest'
   gem 'annotate-models'
