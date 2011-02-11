@@ -1,4 +1,6 @@
 Freemark::Application.routes.draw do
+  resources :bookmarks
+
   devise_for :users
 
   # The priority is based upon order of creation:
