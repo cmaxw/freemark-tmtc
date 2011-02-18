@@ -9,6 +9,9 @@ class Ability
       can :edit, Bookmark do |bookmark|
         bookmark && bookmark.user == user
       end
+      can :read, Bookmark do |bookmark|
+        bookmark && bookmark.user == user
+      end
       can :update, Bookmark do |bookmark|
         bookmark && bookmark.user == user
       end

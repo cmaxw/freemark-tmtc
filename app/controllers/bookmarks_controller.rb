@@ -4,7 +4,7 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.xml
   def index
-    @bookmarks = Bookmark.all
+    @bookmarks = current_user.bookmarks.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,7 +15,7 @@ class BookmarksController < ApplicationController
   # GET /bookmarks/1
   # GET /bookmarks/1.xml
   def show
-    @bookmark = Bookmark.find(params[:id])
+    @bookmark = current_user.bookmarks.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -42,7 +42,7 @@ class BookmarksController < ApplicationController
   # POST /bookmarks
   # POST /bookmarks.xml
   def create
-    @bookmark = Bookmark.new(params[:bookmark])
+    @bookmark = current_user.bookmarks.build(params[:bookmark])
 
     respond_to do |format|
       if @bookmark.save

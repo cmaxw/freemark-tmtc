@@ -14,6 +14,8 @@ module NavigationHelpers
       new_user_session_path
     when /the new bookmarks page/
       new_bookmark_path
+    when /the bookmarks list/
+      bookmarks_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
