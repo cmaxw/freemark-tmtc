@@ -8,7 +8,7 @@ gem 'mysql2'
 gem 'devise'
 gem 'cancan'
 gem 'jquery-rails'
-gem 'haml'
+gem 'haml-rails'
 
 # For html2haml
 gem 'hpricot'
