@@ -2,13 +2,26 @@
 %html
   %head
     %title Freemark
-    = stylesheet_link_tag :all
+    = stylesheet_link_tag 'grid.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'text.css', :media => 'screen, projection'
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
-    .welcome
-      - if current_user
-        Welcome #{current_user.email}
-      - else
-        = link_to "Sign In", new_user_session_url
-    = yield
+    .container_12
+      .menu_container
+        %ul
+          %li
+            Welcome
+            = link_to "Charles Max Wood", "/"
+          %li
+            = link_to "Inbox", "#"
+          %li
+            = link_to "Settings", "#"
+          %li
+            = link_to "Sign Out", "#"
+      .main_content
+        .left
+        
+        .right
+          = yield
+      .sidebar_content

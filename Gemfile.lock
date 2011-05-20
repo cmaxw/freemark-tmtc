@@ -48,6 +48,10 @@ GEM
     celerity (0.8.6)
     childprocess (0.1.6)
       ffi (~> 0.6.3)
+    compass (0.10.6)
+      haml (>= 3.0.4)
+    compass-960-plugin (0.9.11)
+      compass
     configuration (1.2.0)
     cucumber (0.10.0)
       builder (>= 2.1.2)
@@ -157,6 +161,8 @@ DEPENDENCIES
   autotest
   cancan
   capybara
+  compass
+  compass-960-plugin
   cucumber-rails
   devise
   factory_girl_rails

@@ -9,6 +9,8 @@ gem 'devise'
 gem 'cancan'
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'compass'
+gem 'compass-960-plugin'
 
 # For html2haml
 gem 'hpricot'
