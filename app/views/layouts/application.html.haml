@@ -11,14 +11,17 @@
       .menu_container
         %ul
           %li
-            Welcome
-            = link_to "Charles Max Wood", "/"
+            - if current_user
+              Welcome
+              = link_to current_user.email, "/"
+            - else
+              = link_to "Sign In", new_user_session_path
           %li
             = link_to "Inbox", "#"
           %li
             = link_to "Settings", "#"
           %li
-            = link_to "Sign Out", "#"
+            = link_to "Sign Out", destroy_user_session_path if current_user
       .main_content
         .left
         

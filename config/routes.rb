@@ -1,4 +1,6 @@
 Freemark::Application.routes.draw do
+  get "icons/hover"
+
   resources :bookmarks
 
   devise_for :users
